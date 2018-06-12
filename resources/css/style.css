@@ -1,5 +1,4 @@
 /*Universal Styles*/
-
 html {
   font-size: 16px;
 }
@@ -9,6 +8,12 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Work Sans', sans-serif;
 }
 
 h1,
@@ -101,6 +106,10 @@ nav ul {
   padding-right: 1.5rem;
 }
 
+.bold-text {
+  color: firebrick;
+}
+
 .nav li {
   padding-left: 1rem;
 }
@@ -108,6 +117,16 @@ nav ul {
 nav .gray-text {
   color: gray;
 }
+
+.nav li:hover {
+  color: firebrick;
+}
+
+.nav li:active {
+  color: #005182;
+}
+
+
 
 
 /*banner*/
@@ -142,6 +161,11 @@ h1 {
   color: white;
   padding: .5rem;
 }
+
+.text span:hover {
+  background-color: firebrick;
+}
+
 
 /*main*/
 
@@ -192,7 +216,15 @@ h1 {
 
 .col-text span {
   font-size: .85rem;
-  color: blue;
+  color: #005182;
+}
+
+.main .thumbs:hover {
+  background-color: lightgray;
+}
+
+.col-text span:hover {
+  color: firebrick;
 }
 
 
@@ -205,6 +237,7 @@ h1 {
 .thumbnails h2 {
   text-align: center;
   padding: 2rem;
+  color: #103159;
 }
 
 .thumb-images {
@@ -239,16 +272,21 @@ h1 {
   padding: .5rem 1rem 1rem 1rem;
 }
 
+.thumb-images .column:hover {
+  background-color: lightgray;
+}
+
 
 /*thesis*/
 
 .thesis h2 {
   text-align: center;
   padding-top: 2rem;
+  color: #103159;
 }
 
 .thesis h3 {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
 }
 
 .thesis p {
@@ -262,6 +300,10 @@ h1 {
 .thesis video {
   width: 100%;
   height: auto;
+}
+
+.thesis .thumbs:hover {
+  background-color: lightgray;
 }
 
 /*footer*/
@@ -283,6 +325,10 @@ footer li {
   padding: .5rem;
 }
 
+footer li:hover {
+  color: #005182;
+  }
+
 /*mobile responsive*/
 
 @media only screen and (max-width: 470px) {
@@ -296,6 +342,14 @@ footer li {
     width: 470px;
     height: 4rem;
     justify-content: space-around;
+  }
+
+  .mobile-nav img:hover {
+    background-color: lightgray;
+  }
+
+  .mobile-nav img:active {
+    background-color: gray;
   }
 
   .banner {
@@ -330,6 +384,10 @@ footer li {
     display: none;
   }
 
+  .main-mobile div {
+    display: block;
+    width: 90%;
+  }
 
   .thumb-mobile {
     width: 75%;
@@ -367,6 +425,14 @@ footer li {
     display: block;
   }
 
+  .mobile-list h3:hover {
+    background-color: #005182;
+  }
+
+  .mobile-list h3:active {
+    background-color: firebrick;
+  }
+
   .thesis .secondary {
     display: none;
   }
@@ -380,5 +446,4 @@ footer li {
     width: 150%;
     height: auto;
   }
-
 }
